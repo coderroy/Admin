@@ -1,0 +1,23 @@
+ {{adminservice.unverfiedproperties.length}}
+  <table class="container">
+    <thead>
+      <tr>
+        <th><h1>PropertyId</h1></th>
+        <th><h1>Name</h1></th>
+        <th><h1>Owner's Name</h1></th>
+        <th><h1>Owner's Email</h1></th>
+        <th><h1>Location</h1></th>
+        <th><h1>City</h1></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prop of adminservice.unverfiedproperties">
+        <td>{{prop.PropertyId}}</td>
+        <td>{{prop.Property_Name}}</td>
+        <td>{{prop.Name}}</td>
+        <td>{{prop.email}}</td>
+        <td>{{prop.Location_name}}</td>
+        <td>{{prop.City_name}}</td>
+      </tr>
+    </tbody>
+  </table>

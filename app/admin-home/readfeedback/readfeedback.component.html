@@ -1,0 +1,23 @@
+<div class="table-users">
+    <div class="header">Users</div>
+    
+    <table cellspacing="0">
+       <tr>
+          <th>Picture</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>User Type</th>
+          <th width="330">Comments</th>
+       </tr>
+       <tr *ngFor="let feed of adminservice.feedbacks">
+          <td><i class="fas fa-user"></i></td>
+          <td>{{feed.Name}}</td>
+          <td>{{feed.EmailID}}</td>
+          <td>{{feed.FeedBackDate}}</td>
+          <td>{{feed.TypeOfUser}}</td>
+          <td>{{feed.FeedBack}}</td>
+          <td><button type="button" (click)="deletefeedback(feed)">Delete Post</button></td>
+       </tr>
+    </table>
+ </div>

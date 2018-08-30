@@ -1,0 +1,27 @@
+{{adminservice.owners | json}}
+<br>
+{{adminservice.owners.Location_Name}}
+<table class="container">
+  <thead>
+    <tr>
+      <th><h1>UserId</h1></th>
+      <th><h1>Name</h1></th>
+      <th><h1>Email</h1></th>
+      <th><h1>Property Name</h1></th>
+      <th><h1>Location</h1></th>
+      <th><h1>City</h1></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let owner of adminservice.owners">
+      <td>{{owner.UserId}}</td>
+      <td>{{owner.Name}}</td>
+      <td>{{owner.email}}</td>
+      <td>{{owner.Location_name}}</td>
+      <td>{{owner.City_name}}</td>
+      <td>{{owner.PropertyId}}</td>
+      <!-- <td>{{owner.Property_Name}}</td> -->
+      
+    </tr>
+  </tbody>
+</table>
